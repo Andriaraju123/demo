@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+    <title>Chronicle Education Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Chronicle Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{% static 'assets/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
+    <!-- shop css -->
+    <link href="{% static 'assets/css/shop.css' %}" type="text/css"  rel="stylesheet" media="all">
+    <link href="{% static 'assets/css/style.css' %}" type="text/css"  rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="{% static 'assets/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <!-- logo -->
+    <link href="//fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <!-- titles -->
+    <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <!-- body -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    < id="home">
+        <!-- header -->
+        <!-- navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="main-nav">
+                <div class="container">
+
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Chronicle</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1>
+                            <a class="navbar-brand" href="index">Book N Books</a>
+                        </h1>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse nav-right">
+                        <ul class="nav navbar-nav navbar-left cl-effect-15">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden">
+                                <a class="page-scroll" href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a href="userhome">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">shop
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../shop">books</a>
+                                    </li>
+                                    <li>
+                                        <a href="../secondhandbooks">second-hand books</a>
+                                    </li>
+                                    <li>
+                                        <a href="../seller_userhome">Share It</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="mycart">cart</a>
+                            </li>
+                            <li>
+                                <a href="Wishlist">wishlist</a>
+                            </li>
+                            <li>
+                                <a href="user_orders">my orders</a>
+                            </li>
+<!--                            <li>-->
+<!--                                <a href="contact">Contact us</a>-->
+<!--                            </li>-->
+                            <li>
+                                <a href="logout" title="logout">
+<!--                                    SignIn & SignUp-->
+                                    <span class="fa fa-sign-out"style="font-size:20px"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="search-bar-agileits">
+							<div class="cd-main-header">
+								<ul class="cd-header-buttons">
+									<li>
+										<a class="cd-search-trigger" href="#cd-search">
+											<span></span>
+										</a>
+									</li>
+								</ul>
+								<!-- cd-header-buttons -->
+							</div>
+							<div id="cd-search" class="cd-search">
+								<form action="search" method="post">
+									{% csrf_token %}
+									<input name="s" type="search" placeholder="Type and Hit Enter...">
+								</form>
+							</div>
+						</div>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.container -->
+            </div>
+        </nav>
+<div class="crumbs text-center">
+			<div class="container">
+				<div class="row">
+<!--					<ul class="btn-group btn-breadcrumb bc-list">-->
+<!--						<li class="btn btn1">-->
+<!--							<a href="index">-->
+<!--								<i class="glyphicon glyphicon-home"></i>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--						<li class="btn btn2">-->
+<!--							<a href="shop">product catalogue</a>-->
+<!--						</li>-->
+<!--					</ul>-->
+				</div>
+			</div>
+		</div>
+		<!--//breadcrumbs ends here-->
+		<!-- Shop -->
+
+
+ 	<div class="crumbs text-center">
+			<div class="container">
+<!--				<div class="row">-->
+<!--					<ul class="btn-group btn-breadcrumb bc-list">-->
+<!--						<li class="btn btn1">-->
+<!--							<a href="index">-->
+<!--								<i class="glyphicon glyphicon-home"></i>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--						<li class="btn btn2">-->
+<!--							<a href="shop">product catalogue</a>-->
+<!--						</li>-->
+<!--					</ul>-->
+<!--				</div>-->
+			</div>
+		</div>
+        {%if messages%}
+        <div class="alert alert-success alert-dismissible">
+            {%for i in messages%}
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong> {{i}}</strong>
+            {%endfor%}
+        </div>
+        {%endif%}
+
+		<!--//breadcrumbs ends here-->
+		<!-- Shop -->
+		<div class="innerf-pages section">
+			<div class="container-cart">
+				<!-- product left -->
+				<div class="side-bar col-md-3">
+					<!--preference -->
+					<div class="left-side">
+						<li style="list-style-type:none" class="dropdown">
+								<h3 class="shopf-sear-headits-sear-head" ><a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown" > category
+									<b class="caret"></b>
+								</a></h3>
+								<ul class="dropdown-menu" >
+									<li>
+										{% for i in data %}
+											<a href="spec/{{i.pk}}" style="color:yellow">{{i.category}} </a>
+										{% endfor %}
+									</li>
+								</ul>
+						</li>
+					</div>
+					<div class="left-side">
+						<li  style="list-style-type:none" class="dropdown">
+								<h3 class="shopf-sear-headits-sear-head" ><a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown" > Languages
+									<b class="caret"></b>
+								</a></h3>
+							<ul class="dropdown-menu" >
+								<form method="get" action="searchlang"  class="dropdown-menu">
+									<select name="lang">
+										<li><option value="English">English</option></li>
+										<li><option value="Malayalam">Malayalam</option></li>
+										<li><option value="Hindi">Hindi</option></li>
+									</select>
+									<button type="submit">Search</button>
+								</form></ul>
+
+<!--								<ul class="dropdown-menu">-->
+<!--									<li>-->
+<!--										{% for i in data %}-->
+<!--											<a href="speclang/{{i.pk}}" style="color:yellow">{{i.category}} </a>-->
+<!--										{% endfor %}-->
+<!--									</li>-->
+<!--								</ul>-->
+						</li>
+					</div>
+					<!-- // preference -->
+<!--					<div class="search-hotel">-->
+<!--						<h3 class="shopf-sear-headits-sear-head">-->
+<!--							<span>author</span> in focus</h3>-->
+<!--						<form action="#" method="post">-->
+<!--							<input type="search" placeholder="search here" name="search" required="">-->
+<!--							<input type="submit" value="Search">-->
+<!--						</form>-->
+<!--					</div>-->
+					<!-- price range -->
+<!--					<div class="range">-->
+<!--						<h3 class="shopf-sear-headits-sear-head">-->
+<!--							<span>Price</span> range</h3>-->
+<!--						<ul class="dropdown-menu6">-->
+<!--							<li>-->
+
+<!--								<div id="slider-range"></div>-->
+<!--								<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+					<!-- //price range -->
+					<!--preference -->
+<!--					<div class="left-side">-->
+<!--						<h3 class="shopf-sear-headits-sear-head">-->
+<!--							<span>latest</span> arrivals</h3>-->
+<!--						<ul>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">last 30 days</span>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">last 90 days</span>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">last 150 days</span>-->
+<!--							</li>-->
+
+<!--						</ul>-->
+<!--					</div>-->
+					<!-- // preference -->
+					<!-- discounts -->
+<!--					<div class="left-side">-->
+<!--						<h3 class="shopf-sear-headits-sear-head">Language</h3>-->
+<!--						<ul>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">English</span>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">Spanish</span>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">Japanese</span>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">German</span>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">Korean</span>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">Chinese</span>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<input type="checkbox" class="checked">-->
+<!--								<span class="span">French</span>-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+
+
+				</div>
+<!--					 //product left -->
+<!--				 product right -->
+<!---->
+				<div class="left-side-ads-display col-md-9" style="display:inline-block">
+					<div class="wrapper_top_shop">
+						<!-- product-sec1 -->
+						<div class="product-sec1">
+							<!-- row1-->
+							{% for i in b %}
+    <div class="col-md-3 product-men">
+        <div class="product-shoe-info shoe">
+            <!-- Displaying images -->
+            <img src="{{ i.books.s_image1.url }}" height="200px" width="200px" alt="Product Image 1"><br><br>
+            <img src="{{ i.books.s_image3.url }}" height="200px" width="200px" alt="Product Image 3"><br>
+
+            <div class="caption">
+                <!-- Displaying product details -->
+<!--                <p>{{ i.prod.description }}</p>-->
+                <p><b>Book Details</b></p>
+                <p>Name: {{ i.books.s_book_name }}</p>
+<!--                <p>pages: {{ i.books.s_page }}</p>-->
+<!--                <p>Year bought: {{ books.books.s_year }}</p>-->
+                <p>Expected price: ₹ {{ i.books.s_price }}</p>
+                <a href="../details/{{i.pk}}"><button class="btn btn-success">More Details</i></button></a>
+
+                <a href="../add_to_wishlist_second/{{i.pk}}" title="Wishlist"><button class="btn btn-success"><i class="fa fa-heart" aria-hidden="true" style="font-size:18px"></i></button></a><br>
+
+<!--                <p><b>Seller Details</b></p>-->
+<!--                <p>{{ i.user.name }}</p>-->
+<!--                <p>{{ i.user.email }}</p>-->
+<!--                <p>{{ i.user.phone }}</p>-->
+
+                <div class="matrlf-mid">
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- Action buttons -->
+<!--                <form method="POST" action="reqstatus/{{i.id}}">-->
+<!--                       {% csrf_token %}-->
+<!--                       <select name="status">-->
+<!--                              <option value="Pending" {% if i.status == "Pending" %}selected{% endif %}>Pending</option>-->
+<!--                              <option value="Approved" {% if i.status == "Approved" %}selected{% endif %}>Approved</option>-->
+<!--                              <option value="Declined" {% if i.status == "Declined" %}selected{% endif %}>Declined</option>-->
+<!--&lt;!&ndash;                              <option value="Cancelled" {% if order.status == "Cancelled" %}selected{% endif %}>Cancelled</option>&ndash;&gt;-->
+<!--                       </select>-->
+<!--                 <button type="submit">Update</button>-->
+<!--                </form>-->
+<!--                <a href="../../req_addbook/{{i.pk}}"><button type="submit" class="btn btn-success">-->
+<!--                                             &nbsp; Add Books</button></a>-->
+
+            </div>
+        </div>
+    </div>
+{% endfor %}
+						<!-- //product-sec1 -->
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+
+			</div>
+		</div>
+
+
+
+
+
+		<div class="clearfix"></div>
+
+        <script src="{% static 'assets/js/jquery-2.2.3.min.js' %}"></script>
+    <!-- //js -->
+    <!--search jQuery-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <!--search jQuery-->
+    <!-- cart-js -->
+    <script src="{% static 'assets/js/minicart.js' %}"></script>
+    <script>
+        chr.render();
+
+        chr.cart.on('new_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {}
+            }
+        });
+    </script>
+    <!-- //cart-js -->
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{% static 'assets/js/scrolling-nav.js' %}"></script>
+    <!-- //fixed-scroll-nav-js -->
+    <!-- dropdown nav -->
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+    <!-- start-smooth-scrolling -->
+    <script src="{% static 'assets/js/move-top.js' %}"></script>
+    <script src="{% static 'assets/js/easing.js' %}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="{% static 'assets/js/SmoothScroll.min.js' %}"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- about bottom grid Numscroller -->
+    <script src="{% static 'assets/js/numscroller-1.0.js' %}"></script>
+    <!-- //about bottom grid Numscroller -->
+    <!-- Bootstrap core JavaScript
+ ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'assets/js/bootstrap.js' %}"></script>
+<!--{% for i in data %}-->
+<!--        <img src="{{i.image1.url}}" height="200px";width="200px">-->
+<!--        <img src="{{i.image2.url}}" height="200px";width="200px"><br>-->
+<!--        {{i.description}}<br>-->
+<!--        name:{{i.book_name}}<br>-->
+<!--        by:{{i.author}}<br>-->
+<!--        publication:{{i.publication}}<br>-->
+<!--        price:{{i.price}}<br>-->
+<!--        <a href="upd/{{i.pk}}"><button>update</button></a>-->
+<!--        <a href=""><button>delete</button></a>-->
+<!--{% endfor %}-->
+
+
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table table-stripped mt-5" border="2">
+		<thead>
+		<tr>
+<!--			<th>booking_date</th>-->
+			<th>name</th>
+        	<th>email</th>
+        	<th colspan="4" style="text-align: center;">address</th>
+        	<th>number</th>
+<!--			<th>book name</th>-->
+<!--			<th>service_date</th>-->
+			<th>service_price</th>
+        	<th   style="text-align: center;">status</th>
+    	</tr>
+		</thead>
+		<tbody>
+		{% if s.e_status == 'Free' %}
+<!--		{% for i in da %}-->
+
+		<tr>
+<!--			<td>{{i.created_at}}</td>-->
+			<td>{{da.d_order.so_fname}}</td>
+			<td>{{da.d_order.so_email}}</td>
+        	<td>{{da.d_order.so_address}}</td>
+<!--			<td>{{da.d_order.state}}</td>-->
+			<td>{{da.d_order.so_district}}</td>
+			<td>{{da.d_order.so_pincode}}</td>
+
+        	<td>{{da.d_order.so_phone}}</td>
+<!--			<td>{{da.d_order.booked_name}}</td>-->
+<!--			<td>{{da.d_order.date}}</td>-->
+			<td>{{da.d_order.total_price}}</td>
+
+
+
+<!--		<td><button><a href="../book_accept/{{i.id}}">accept</a></button></td>-->
+<!--        <td><button><a href="../a_book_cancel/{{i.pk}}">cancel</a></button></td>-->
+
+				<td><form method="POST" action="../statusup2/{{i.booking_id}}">
+							{% csrf_token %}
+							<select name="status" style="margin-top: 14px;">
+							  <option value="Pending" {% if i.status == "Pending" %}selected{% endif %}>Pending</option>
+								<option value="Finished" {% if i.status == "Finished" %}selected{% endif %}>Finished</option>
+
+							  <option value="Cancelled" {% if i.status == "Cancelled" %}selected{% endif %}>Cancelled</option>
+							</select>
+							<button type="submit" class="fa fa-send-o" style="margin-top: 10px; margin-left: 16px;"></button>
+						  </form>
+<!--				<button id="toggle-list-view-btn" onclick="toggleListView()">Toggle List View</button>-->
+			</td>
+
+		</tr>
+
+
+<!--		{% endfor %}-->
+		{%endif%}
+		</tbody>
+	</table>
+
+
+</body>
+</html>

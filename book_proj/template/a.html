@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if s %}
+<form method="POST" action="../emp_status">
+    {% csrf_token %}
+	<label style="font-size:20px;">employee status: </label>
+    <select name="status" style="margin-top: 14px;">
+        <option value="Free" {% if s.e_status == "Free" %}selected{% endif %}>Free</option>
+        <option value="In work" {% if s.e_status == "In work" %}selected{% endif %}>In work</option>
+        <option value="Off duty" {% if s.e_status == "Off duty" %}selected{% endif %}>Off duty</option>
+    </select>
+    <button type="submit"  style="margin-top: 10px; margin-left: 16px;">ok</button>
+</form>
+{% endif%}
+
+<table class="table table-stripped mt-5" border="2">
+		<thead>
+		<tr>
+<!--			<th>booking_date</th>-->
+			<th>name</th>
+        	<th>email</th>
+        	<th>address</th>
+            <th>district</th>
+            <th>pincode</th>
+        	<th>number</th>
+			<th>Order_id</th>
+			<th>payment mode</th>
+			<th>service_price</th>
+        	<th   style="text-align: center;">status</th>
+			<th>work</th>
+    	</tr>
+		</thead>
+		<tbody>
+		{% if s.e_status == 'Free' %}
+		{% for i in da %}
+
+		<tr>
+<!--			<td>{{i.created_at}}</td>-->
+			<td>{{i.d_order.so_fname}}</td>
+			<td>{{i.d_order.so_email}}</td>
+        	<td>{{i.d_order.so_address}}</td>
+<!--			<td>{{da.d_order.state}}</td>-->
+			<td>{{i.d_order.so_district}}</td>
+			<td>{{i.d_order.so_pincode}}</td>
+
+        	<td>{{i.d_order.so_phone}}</td>
+			<td>{{i.d_order.order_id}}</td>
+			<td>{{i.d_order.payment_mode}}</td>
+			<td>{{i.d_order.total_price}}</td>
+
+
+
+<!--		<td><button><a href="../book_accept/{{i.id}}">accept</a></button></td>-->
+<!--        <td><button><a href="../a_book_cancel/{{i.pk}}">cancel</a></button></td>-->
+
+				<td><form method="POST" action="../statusup2/{{i.id}}">
+							{% csrf_token %}
+							<select name="status" style="margin-top: 14px;">
+							  <option value="Pending" {% if i.d_status == "Pending" %}selected{% endif %}>Pending</option>
+								<option value="Accept" {% if i.d_status == "Accept" %}selected{% endif %}>Accept</option>
+								<option value="Collected" {% if i.d_status == "Collected" %}selected{% endif %}>Collected</option>
+								<option value="Delivered" {% if i.d_status == "Delivered" %}selected{% endif %}>Delivered</option>
+							  <option value="Cancelled" {% if i.d_status == "Cancelled" %}selected{% endif %}>Cancelled</option>
+							</select>
+							<button type="submit"  style="margin-top: 10px; margin-left: 16px;">done</button>
+						  </form>
+<!--				<button id="toggle-list-view-btn" onclick="toggleListView()">Toggle List View</button>-->
+			</td>
+			<td><center>
+				{% if i.d_status == 'Delivered' or  i.d_status == 'Cancelled' %}
+					<a href="../delivery_completed/{{i.pk}}"><input type="submit" value="done"></a>
+				{%endif%}
+			</center></td>
+		</tr>
+
+
+		{% endfor %}
+		{%endif%}
+		</tbody>
+	</table>
+
+
+</body>
+</html>

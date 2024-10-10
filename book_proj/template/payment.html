@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Chronicle Education Category Bootstrap Responsive website Template | Checkout :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Chronicle Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{% static 'assets/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
+    <!-- shop css -->
+    <link href="{% static 'assets/css/shop.css' %}" type="text/css" rel="stylesheet" media="all">
+    <!-- checkout css -->
+    <link href="{% static 'assets/css/checkout.css' %}" type="text/css" rel="stylesheet" media="all">
+    <link href="{% static 'assets/css/style.css' %}" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="{% static 'assets/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <!-- logo -->
+    <link href="//fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <!-- titles -->
+    <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <!-- body -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+    .razorpay-payment-button {
+        background-color: #28a745 !important; /* Bootstrap's success color */
+        border-color: #28a745 !important; /* Optional: Border color matching the background */
+    }
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="home">
+        <!-- header -->
+        <!-- navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="main-nav">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Chronicle</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1>
+                            <a class="navbar-brand" href="index">Book N Books</a>
+                        </h1>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse nav-right">
+                        <ul class="nav navbar-nav navbar-left cl-effect-15">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden">
+                                <a class="page-scroll" href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a href="userhome">Home</a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">shop
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../shop">books</a>
+                                    </li>
+                                    <li>
+                                        <a href="../secondhandbooks">second-hand books</a>
+                                    </li>
+                                    <li>
+                                        <a href="../seller_userhome"><i>Share It</i></a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../mycart">cart</a>
+                            </li>
+                            <li>
+                                <a href="Wishlist">wishlist</a>
+                            </li>
+                            <li>
+                                <a href="../user_orders">my order</a>
+                            </li>
+                            <li>
+                                <a href="login" title="logout">
+                                    <span class="fa fa-sign-out" style="font-size:20px" aria-hidden="true"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+                            </div>
+                        </div>
+                        <!-- //shopping cart ends here -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.container -->
+            </div>
+        </nav>
+        <div class="banner pay">
+            <!-- banner-text -->
+            <div class="banner-text-inner">
+                <div class="container">
+                    <h2 class="title-inner">
+
+                    </h2>
+
+                </div>
+            </div>
+            <!-- //banner-text -->
+        </div>
+
+        <div class="login-form section text-center">
+            <div class="container">
+<!--                <h4 class="rad-txt">-->
+<!--                   / <span class="abtxt1">Payment</span>-->
+<!--                    <span class="abtext">sign up</span>-->
+<!--                </h4>-->
+<!--                <div id="loginbox" style="margin-top:30px;" class="mainbox loginbox">-->
+<!--                    <div class="panel panel-info">-->
+<!--                        <div class="panel-heading">-->
+
+<!--                        </div>-->
+                        <form action="../success" method="POST">
+    {% csrf_token %}
+<script
+    src="https://checkout.razorpay.com/v1/checkout.js"
+    data-key="rzp_test_SROSnyInFv81S4"
+    data-amount={{amount}}
+    data-currency="INR"
+    data-order_id="{{payment.id}}"
+    data-buttontext="Pay with Razorpay"
+    data-name="django payment"
+    data-description="this is test payment"
+    data-image="https://example.com/your_logo.jpg"
+    data-prefill.name="Gaurav Kumar"
+    data-prefill.email="django@test.com"
+    data-theme.color="#F37254">
+</script>
+<input type="hidden" custom="Hidden Element" name="hidden">
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
